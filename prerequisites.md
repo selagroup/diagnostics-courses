@@ -10,3 +10,9 @@ Also, make sure to configure the `_NT_SYMBOL_PATH` environment variable to point
 ```
 srv*C:\symbols*http://msdl.microsoft.com/download/symbols
 ```
+
+Finally, for convenience, set the `COURSEDIR` environment variable to the root of this repository. For example, if you cloned (or downloaded) this repository to C:\Sela, run the following command from a Command Prompt window:
+
+```
+setx COURSEDIR C:\Sela
+```
