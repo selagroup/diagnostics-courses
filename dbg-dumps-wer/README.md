@@ -20,3 +20,5 @@ Under the **FileExplorer.exe** key, create the following values:
 Run the FileExplorer.exe application from the [bin](bin/) folder. It crashes after a few seconds without ever initializing properly. Navigate to the **C:\Temp\CrashDumps** folder and make sure a dump file was created.
 
 > You can use the same registry configuration for any crashing process, including the IIS Worker Process (w3wp.exe). In fact, if you place the **DumpFolder** and **DumpType** values directly under the **LocalDumps** key, they will apply to every crashing application that doesn't have custom error reporting. Notably, .NET 2.0 applications are not covered by this registry key.
+
+In the [next lab](../dbg-dumps-vs/), you will learn how to analyze the dump file you just generated.
