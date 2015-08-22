@@ -1,0 +1,38 @@
+﻿class Main {
+    function Array initNumbers() {
+        var Array numbers;
+        let numbers = Array.new(5);
+        let numbers[0] = 13;
+        let numbers[1] = 14;
+        let numbers[2] = 41;
+        let numbers[3] = 97;
+        let numbers[4] = 101;
+        return numbers;
+    }
+    function void main() {
+        var Array numbers;
+        var int i, j;
+        var boolean prime;
+        let numbers = Main.initNumbers();
+        let j = 0;
+        while (j < 5) {
+            let i = 2;
+            let prime = true;
+            while (i < numbers[j] & prime) {
+                if (numbers[j] % i = 0) {
+                    do System.printInt(numbers[j]);
+                    do System.print(" is composite.");
+                    do System.println();
+                    let prime = false;
+                }
+                let i = i + 1;
+            }
+            if (prime) {
+                    do System.printInt(numbers[j]);
+                    do System.print(" is prime.");
+                    do System.println();				
+            }
+            let j = j + 1;
+        }
+    }
+}
