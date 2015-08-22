@@ -34,7 +34,7 @@ Run the SimpleWriteApp.exe application from the [bin](bin/) folder. It does not 
 
 Load SOS (using the `.loadby sos clr` command) and use the standard SOS commands (`!Threads`, `!CLRStack -a`) to make a first attempt at hang diagnostics.
 
-There are two threads that seem to be using an instance of the `MyReaderWriterLock` class. Are both threads using the same instance? Pay attention to the following remark from the [class' XML documentation](src/SimpleWriteApp/Program.cs): "If more than one writer attempts to acquire the lock at the same time, the behavior is undefined."
+There are two threads that seem to be using an instance of the `MyReaderWriterLock` class. Are both threads using the same instance? Pay attention to the following remark from the [class' XML documentation](src/SimpleWriteApp/Program.cs#L11): "If more than one writer attempts to acquire the lock at the same time, the behavior is undefined."
 
 Inspect the `MyReaderWriterLock` instances used by the two threads with the `!do` command. Inspect their internal implementation state (the semaphore) and its handle. For example, use the `!handle 100 f` command to view handle information for handle 100.
 
