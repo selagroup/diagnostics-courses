@@ -1,0 +1,14 @@
+﻿
+class Rational {
+	field int nom;
+	field int denom;
+
+	constructor Rational new(int n, int d) {
+		let nom = n;
+		let denom = d;
+		return this;
+	}
+	method boolean isValid() {
+		return !(denom = 0);
+	}
+}

@@ -1,0 +1,51 @@
+﻿
+class Main {
+	field int i;
+	field String j;
+	static Array k;
+	field int h;
+	constructor Main new() {
+		let i = 5;
+		return this;
+	}
+	method void meth() {
+		let h = 0;
+	}
+	function void main() {
+		var Array i;
+		var int j;
+		var Rational r;
+		let j = 1;
+		let i = Main.new();
+		let i[j] = 5/12*(i[0]-63);
+		while (i[0] < j) {
+			let i[0] = i[0] + 1;
+		}
+		if (i[0] >= (j + 10)) {
+			let i[0] = 1;
+		} else {
+			let i[0] = 0;
+		}
+		let k = 0;
+		do Memory.free(i);
+
+		do System.print("2+3*5 = ");
+		do System.printInt(2+3*5);
+		do System.println();
+
+		do System.print("Enter a number: ");		
+		let j = System.readInt();
+		let j = j * j;
+		do System.println();
+		do System.print("Your number squared is: ");
+		do System.printInt(j);
+		do System.println();
+
+		let r = Rational.new(5,j);
+		do System.print("Is the rational valid? ");
+		do System.printInt(r.isValid());
+		do System.println();
+
+		return;
+	}
+}
