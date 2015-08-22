@@ -11,6 +11,7 @@ You will need the following software to work on these hands-on labs:
 * [Visual Studio 2015](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx)
 * [PerfView 1.7](http://www.microsoft.com/en-us/download/details.aspx?id=28567)
 * [DebugDiag 2.0](http://www.microsoft.com/en-us/download/details.aspx?id=42933)
+* [Sysinternals Suite](https://technet.microsoft.com/en-us/sysinternals/bb842062.aspx)
 
 #### Symbol Path
 
