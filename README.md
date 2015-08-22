@@ -2,7 +2,7 @@
 
 This repository contains supporting materials for Sela's diagnostics courses. The instructor will direct you to specific labs as the course progresses. Before you start working on the labs, make sure to review the [prerequisites](prerequisites.md) document. It contains information on required software installations as well as some configuration steps you should perform on your system.
 
-These materials are distributed under the GPL 2.0 license (see [LICENSE.md](LICENSE.md)).
+These materials are distributed under the GPL 2.0 license (see [LICENSE](LICENSE)).
 
 ### Getting The Materials
 
