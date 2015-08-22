@@ -1,0 +1,13 @@
+﻿@model IEnumerable<SDPApp.Shared.Speaker>
+
+<h2>SDP Speakers</h2>
+@foreach (var speaker in Model)
+{
+    <div class="row">
+        <div class="col-md-4"><img class="thumbnail" src="@speaker.PhotoURL" width="200" height="200" alt="@speaker.Name" /></div>
+        <div class="col-md-8">
+            <a href="/Home/SpeakerDetails?speakerName=@speaker.Name"><h2>@speaker.Name</h2></a>
+            <p>@speaker.Bio</p>
+        </div>
+    </div>
+}

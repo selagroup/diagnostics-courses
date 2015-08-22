@@ -12,6 +12,15 @@ You will need the following software to work on these hands-on labs:
 * [PerfView 1.7](http://www.microsoft.com/en-us/download/details.aspx?id=28567)
 * [DebugDiag 2.0](http://www.microsoft.com/en-us/download/details.aspx?id=42933)
 * [Sysinternals Suite](https://technet.microsoft.com/en-us/sysinternals/bb842062.aspx)
+* [IntelliTrace Stand-Alone Collector](https://www.microsoft.com/en-us/download/details.aspx?id=44909)
+
+#### Installing IntelliTrace Stand-Alone Collector
+
+After downloading the stand-alone collector, run the downloaded executable to extract the IntelliTraceCollection.cab file. Open a command prompt window, navigate to the directory where you put the .cab file, and run the following command to extract it (note the trailing dot -- it is required):
+
+```
+expand /f:* IntelliTraceCollection.cab .
+```
 
 #### Symbol Path
 

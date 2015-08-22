@@ -1,0 +1,28 @@
+﻿<Window x:Class="SDPApp.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:SDPApp.WPF"
+        Title="Conference Speakers" Height="500" Width="500">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" FontWeight="Bold" FontSize="36">Speakers</TextBlock>
+        <Button Grid.Column="1" Grid.Row="0" FontSize="32" Click="LoadSpeakers">Load</Button>
+        <ListView Grid.Row="1" Grid.ColumnSpan="2" x:Name="lstSpeakers" SelectionMode="Single" SelectionChanged="lstSpeakers_SelectionChanged">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="100" Height="100" Source="{Binding Photo}" />
+                        <TextBlock FontSize="24" Text="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>
