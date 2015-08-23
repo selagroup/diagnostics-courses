@@ -1,0 +1,23 @@
+﻿@model SDPApp.Shared.Speaker
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Model.Name</h2>
+        <img class="thumbnail" src="@Model.PhotoURL" width="200" height="200" alt="@Model.Name" />
+        <p>@Model.Bio</p>
+        <a href="@Model.Blog">Read my blog</a>
+    </div>
+    <div class="col-md-8">
+        <h2>Sessions</h2>
+        @foreach (var session in Model.Sessions)
+        {
+            <h3>@session.Title</h3>
+            <p>
+                <span class="label label-success">@session.Track</span><br/>
+                <span class="label label-info">@session.Time</span><br/>
+                @session.Description
+            </p>
+        }
+    </div>
+</div>
+
