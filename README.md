@@ -14,7 +14,7 @@ git clone https://github.com/selagroup/diagnostics-courses.git
 
 ### List of Labs
 
-> Note: For each lab below, [C++] indicates it's a lab that would mostly interest C++ developers; [C#] indicates that it's a lab that would mostly interest C# developers. Labs not marked with either tag can be interesting for both audiences.
+> Note: For each lab below, [C++] indicates it's a lab that would mostly interest C++ developers; [C#] indicates that it's a lab that would mostly interest C# developers. Labs not marked with either tag can be interesting for both audiences. In any case, if you are building a managed application that has some unmanaged components, you should consider working through *all* the labs.
 
 1. [Analyzing I/O Activity with WPR and WPA](perf-wpr-fileaccesses/)
 1. [Analyzing Unmanaged Heap Allocations with XPerf and WPA](perf-xperf-heapalloc/) [C++]
@@ -35,6 +35,7 @@ git clone https://github.com/selagroup/diagnostics-courses.git
 1. [Advanced Memory Leak Analysis with SOS](dbg-sos-advancedleak/) [C#]
 1. [Analyzing a .NET Memory Leak with DebugDiag](dbg-sos-debugdiagleak/) [C#]
 1. [Locks and Wait Analysis with WinDbg and SOS](dbg-sos-locks/) [C#]
+1. [Catching an Unmanaged Heap Corruption](dbg-windbg-heapcorr/) [C++]
 1. [Automatic Dump Analysis with CLRMD](dbg-clrmd-triage/)
 1. [Implementing a Stack Dumper Utility with CLRMD](dbg-clrmd-stackdumper/) [C#]
 1. [Running Heap Queries on Live Processes with CLRMD](dbg-clrmd-heapqueries/) [C#]
