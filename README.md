@@ -27,7 +27,8 @@ git clone https://github.com/selagroup/diagnostics-courses.git
 1. [Basic Dump Analysis with Visual Studio](dbg-dumps-vs/)
 1. [Dump File Memory Usage Analysis with Visual Studio](dbg-dumps-vsmemory/) [C#]
 1. [Capturing Dump Files with DebugDiag](dbg-dumps-debugdiag/)
-1. [Basic Dump Triage with WinDbg](dbg-dumps-windbg/)
+1. [Basic Managed Dump Triage with WinDbg](dbg-dumps-windbg/) [C#]
+1. [Basic Unmanaged Dump Triage with Windbg](dbg-dumps-windbg2/) [C++]
 1. [Exploring WinDbg Commands](dbg-windbg-intro/) [C++]
 1. [Exploring SOS Commands](dbg-sos-intro/) [C#]
 1. [.NET Memory Leak Analysis with WinDbg and SOS](dbg-sos-leak/) [C#]

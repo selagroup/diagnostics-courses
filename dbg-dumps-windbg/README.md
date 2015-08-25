@@ -1,4 +1,4 @@
-### Basic Dump Triage with WinDbg
+### Basic Managed Dump Triage with WinDbg
 
 In this lab, you will perform basic dump analysis with WinDbg. This is an important skill to have, because you might find yourself in a production environment where you don't have access to Visual Studio, but will still need to get a quick reading into why your application crashed or misbehaved.
 
