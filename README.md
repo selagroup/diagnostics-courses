@@ -14,25 +14,28 @@ git clone https://github.com/selagroup/diagnostics-courses.git
 
 ### List of Labs
 
+> Note: For each lab below, [C++] indicates it's a lab that would mostly interest C++ developers; [C#] indicates that it's a lab that would mostly interest C# developers. Labs not marked with either tag can be interesting for both audiences.
+
 1. [Analyzing I/O Activity with WPR and WPA](perf-wpr-fileaccesses/)
-1. [Analyzing Unmanaged Heap Allocations with XPerf and WPA](perf-xperf-heapalloc/)
+1. [Analyzing Unmanaged Heap Allocations with XPerf and WPA](perf-xperf-heapalloc/) [C++]
 1. [Diagnosing High CPU Utilization with PerfView](perf-perfview-cpu/)
-1. [Reducing .NET Allocations with PerfView](perf-perfview/netallocs/)
+1. [Reducing .NET Allocations with PerfView](perf-perfview/netallocs/) [C#]
 1. [Setting Up Continuous ETW Monitoring with PerfView](perf-perfview-monitoring/)
-1. [Diagnosing a .NET Memory Leak with PerfView](perf-perfview-netleak/)
-1. [Collecting IntelliTrace Logs with the Stand-Alone Collector](dbg-intellitrace-sc/)
+1. [Diagnosing a .NET Memory Leak with PerfView](perf-perfview-netleak/) [C#]
+1. [Collecting IntelliTrace Logs with the Stand-Alone Collector](dbg-intellitrace-sc/) [C#]
 1. [Generating Dump Files Automatically with WER](dbg-dumps-wer/)
 1. [Basic Dump Analysis with Visual Studio](dbg-dumps-vs/)
-1. [Dump File Memory Usage Analysis with Visual Studio](dbg-dumps-vsmemory/)
+1. [Dump File Memory Usage Analysis with Visual Studio](dbg-dumps-vsmemory/) [C#]
 1. [Capturing Dump Files with DebugDiag](dbg-dumps-debugdiag/)
 1. [Basic Dump Triage with WinDbg](dbg-dumps-windbg/)
-1. [Exploring SOS Commands](dbg-sos-intro/)
-1. [.NET Memory Leak Analysis with WinDbg and SOS](dbg-sos-leak/)
-1. [Advanced Memory Leak Analysis with SOS](dbg-sos-advancedleak/)
-1. [Analyzing a .NET Memory Leak with DebugDiag](dbg-sos-debugdiagleak/)
-1. [Locks and Wait Analysis with WinDbg and SOS](dbg-sos-locks/)
+1. [Exploring WinDbg Commands](dbg-windbg-intro/) [C++]
+1. [Exploring SOS Commands](dbg-sos-intro/) [C#]
+1. [.NET Memory Leak Analysis with WinDbg and SOS](dbg-sos-leak/) [C#]
+1. [Advanced Memory Leak Analysis with SOS](dbg-sos-advancedleak/) [C#]
+1. [Analyzing a .NET Memory Leak with DebugDiag](dbg-sos-debugdiagleak/) [C#]
+1. [Locks and Wait Analysis with WinDbg and SOS](dbg-sos-locks/) [C#]
 1. [Automatic Dump Analysis with CLRMD](dbg-clrmd-triage/)
-1. [Implementing a Stack Dumper Utility with CLRMD](dbg-clrmd-stackdumper/)
-1. [Running Heap Queries on Live Processes with CLRMD](dbg-clrmd-heapqueries/)
+1. [Implementing a Stack Dumper Utility with CLRMD](dbg-clrmd-stackdumper/) [C#]
+1. [Running Heap Queries on Live Processes with CLRMD](dbg-clrmd-heapqueries/) [C#]
 
 Copyright (C) Sela Group, 2015. All rights reserved.
