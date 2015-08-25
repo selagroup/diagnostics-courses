@@ -28,6 +28,7 @@ git clone https://github.com/selagroup/diagnostics-courses.git
 1. [Basic Dump Triage with WinDbg](dbg-dumps-windbg/)
 1. [Exploring SOS Commands](dbg-sos-intro/)
 1. [.NET Memory Leak Analysis with WinDbg and SOS](dbg-sos-leak/)
+1. [Advanced Memory Leak Analysis with SOS](dbg-sos-advancedleak/)
 1. [Analyzing a .NET Memory Leak with DebugDiag](dbg-sos-debugdiagleak/)
 1. [Locks and Wait Analysis with WinDbg and SOS](dbg-sos-locks/)
 1. [Automatic Dump Analysis with CLRMD](dbg-clrmd-triage/)
