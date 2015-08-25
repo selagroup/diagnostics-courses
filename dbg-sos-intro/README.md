@@ -14,7 +14,7 @@ When you attach to the process, WinDbg automatically suspends its execution and 
 
 #### Task 2
 
-List the application's threads using the **View** > **Processes and Threads** menu item, and again by using the `~*` command.
+List the application's threads using the **View** > **Processes and Threads** menu item, and again by using the `~` command.
 
 Switch between the application's threads using the **Processes and Threads** tool window (clicking a thread switches to that thread in the debugger), and then again usin the `~Ns` command (e.g. `~0s`, `~1s`).
 
