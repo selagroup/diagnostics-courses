@@ -14,7 +14,7 @@ git clone https://github.com/selagroup/diagnostics-courses.git
 
 ### List of Labs
 
-> Note: For each lab below, [C++] indicates it's a lab that would mostly interest C++ developers; [C#] indicates that it's a lab that would mostly interest C# developers. Labs not marked with either tag can be interesting for both audiences. In any case, if you are building a managed application that has some unmanaged components, you should consider working through *all* the labs.
+> Note: For each lab below, [C++] indicates it's a lab that would mostly interest C++ developers; [C#] indicates that it's a lab that would mostly interest C# developers; and [kernel] indicates that it's a lab that would mostly interest driver developers. Labs not marked with either tag can be interesting for both audiences. In any case, if you are building a managed application that has some unmanaged components, you should consider working through *all* the labs.
 
 1. [Analyzing I/O Activity with WPR and WPA](perf-wpr-fileaccesses/)
 1. [Analyzing Unmanaged Heap Allocations with XPerf and WPA](perf-xperf-heapalloc/) [C++]
