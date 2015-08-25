@@ -37,6 +37,7 @@ git clone https://github.com/selagroup/diagnostics-courses.git
 1. [Locks and Wait Analysis with WinDbg and SOS](dbg-sos-locks/) [C#]
 1. [Catching an Unmanaged Heap Corruption](dbg-windbg-heapcorr/) [C++]
 1. [Analyzing Stack Corruptions](dbg-windbg-stackcorr/) [C++]
+1. [Analyzing an Unmanaged Memory Leak with WinDbg and VMMap](dbg-windbg-leak/) [C++]
 1. [Automatic Dump Analysis with CLRMD](dbg-clrmd-triage/)
 1. [Implementing a Stack Dumper Utility with CLRMD](dbg-clrmd-stackdumper/) [C#]
 1. [Running Heap Queries on Live Processes with CLRMD](dbg-clrmd-heapqueries/) [C#]

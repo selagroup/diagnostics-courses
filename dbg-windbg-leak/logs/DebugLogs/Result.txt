@@ -1,0 +1,184 @@
+// Debug library initialized ...
+DBGHELP: BatteryMeter - private symbols & lines 
+         D:\livemesh\sharingbin\CppDebug\Exercises\BatteryMeter\Debug\BatteryMeter.pdb
+DBGHELP: ntdll - public symbols  
+         D:\Symbols\wntdll.pdb\ACE318E6A2F44F23A6CC5628F10A7DDC2\wntdll.pdb
+DBGHELP: kernel32 - public symbols  
+         D:\Symbols\wkernel32.pdb\247C9009E69B43AB95E8DDA34622320A2\wkernel32.pdb
+DBGHELP: KERNELBASE - public symbols  
+         D:\Symbols\wkernelbase.pdb\74D5C6E200BD410780AD91A62D03C8CA1\wkernelbase.pdb
+DBGHELP: mfc100ud - private symbols & lines 
+         D:\Symbols\mfc100ud.i386.pdb\E3832F967114455CB70465FC00467B8717\mfc100ud.i386.pdb
+DBGHELP: MSVCR100D - private symbols & lines 
+         D:\Symbols\msvcr100d.i386.pdb\9E26F0DD2C2543B99754DB8B9BA5F8681\msvcr100d.i386.pdb
+DBGHELP: USER32 - public symbols  
+         D:\Symbols\wuser32.pdb\438BB768E2434151BA04E6929C0100522\wuser32.pdb
+DBGHELP: GDI32 - public symbols  
+         D:\Symbols\wgdi32.pdb\4AFCCD0C08C94A6995600DD65392988F2\wgdi32.pdb
+DBGHELP: LPK - public symbols  
+         D:\Symbols\wlpk.pdb\C39166A53CCE43F0ADF876B9C637A1EA1\wlpk.pdb
+DBGHELP: USP10 - public symbols  
+         D:\Symbols\usp10.pdb\0F136332ED524622ACD511B27629058A1\usp10.pdb
+DBGHELP: msvcrt - public symbols  
+         D:\Symbols\msvcrt.pdb\6EC79267530C45188F2A816AD59DBBF92\msvcrt.pdb
+DBGHELP: ADVAPI32 - public symbols  
+         D:\Symbols\advapi32.pdb\8215E3385BE64C70AD230B20F032B9402\advapi32.pdb
+DBGHELP: sechost - public symbols  
+         D:\Symbols\sechost.pdb\7AF14D02D41E4CD6942745FE0E6372B11\sechost.pdb
+DBGHELP: RPCRT4 - public symbols  
+         D:\Symbols\wrpcrt4.pdb\6EEAEDF802FE407B947FCFE825DAF1582\wrpcrt4.pdb
+DBGHELP: SspiCli - public symbols  
+         D:\Symbols\wsspicli.pdb\70B1619CF4B04AD499CAC187FCEE7CE91\wsspicli.pdb
+DBGHELP: CRYPTBASE - public symbols  
+         D:\Symbols\cryptbase.pdb\E62FEAE559EE4CD995614215B01AC2102\cryptbase.pdb
+DBGHELP: SHLWAPI - public symbols  
+         D:\Symbols\shlwapi.pdb\372BB4590B784DBDA605154B826C29EB2\shlwapi.pdb
+DBGHELP: COMCTL32 - public symbols  
+         D:\Symbols\comctl32.pdb\5DB9AF3D1C7C4DE982018D7590337EA52\comctl32.pdb
+DBGHELP: MSIMG32 - public symbols  
+         D:\Symbols\msimg32.pdb\13C89B70614E4E7FB1C677D443D15D182\msimg32.pdb
+DBGHELP: OLEAUT32 - public symbols  
+         D:\Symbols\oleaut32.pdb\204621952AB4418390863F295E593B882\oleaut32.pdb
+DBGHELP: ole32 - public symbols  
+         D:\Symbols\ole32.pdb\21425202547E4A5DA0F12B17C4131B272\ole32.pdb
+DBGHELP: IMM32 - public symbols  
+         D:\Symbols\wimm32.pdb\68C7808EB69642399E0B930F19CCEFBD2\wimm32.pdb
+DBGHELP: MSCTF - public symbols  
+         D:\Symbols\msctf.pdb\173DAEF86B2548DBA6134EB74C4D2F232\msctf.pdb
+DBGHELP: UxTheme - public symbols  
+         D:\Symbols\wuxtheme.pdb\20C669C0018E406295BFA56B7C93850F2\wuxtheme.pdb
+DBGHELP: dwmapi - public symbols  
+         D:\Symbols\dwmapi.pdb\D8D91B3F339A4FDC960FC7121D146DF42\dwmapi.pdb
+DBGHELP: MFC100ENU - no symbols loaded
+DBGHELP: SHELL32 - public symbols  
+         D:\Symbols\shell32.pdb\E58026D57D7C471EB18C43E4326DB5672\shell32.pdb
+DBGHELP: CLBCatQ - public symbols  
+         D:\Symbols\CLBCatQ.pdb\00A720C79BAC402295B6EBDC147257182\CLBCatQ.pdb
+//                                                                          
+// Each log entry has the following syntax:                                 
+//                                                                          
+// + BYTES_DELTA (NEW_BYTES - OLD_BYTES) NEW_COUNT allocs BackTrace TRACEID 
+// + COUNT_DELTA (NEW_COUNT - OLD_COUNT) BackTrace TRACEID allocations      
+//     ... stack trace ...                                                  
+//                                                                          
+// where:                                                                   
+//                                                                          
+//     BYTES_DELTA - increase in bytes between before and after log         
+//     NEW_BYTES - bytes in after log                                       
+//     OLD_BYTES - bytes in before log                                      
+//     COUNT_DELTA - increase in allocations between before and after log   
+//     NEW_COUNT - number of allocations in after log                       
+//     OLD_COUNT - number of allocations in before log                      
+//     TRACEID - decimal index of the stack trace in the trace database     
+//         (can be used to search for allocation instances in the original  
+//         UMDH logs).                                                      
+//                                                                          
+
+
++  6f8178 ( 7e5f88 - ede10)    70a allocs	BackTrace7E5CE0
++     636 (   70a -    d4)	BackTrace7E5CE0	allocations
+
+	ntdll!RtlAllocateHeap+00000274
+	MSVCR100D!_heap_alloc_base+00000053 (f:\dd\vctools\crt_bld\self_x86\crt\src\malloc.c, 55)
+	MSVCR100D!_heap_alloc_dbg_impl+000001FC (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 431)
+	MSVCR100D!_nh_malloc_dbg_impl+0000001F (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 239)
+	MSVCR100D!_nh_malloc_dbg+0000002C (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 302)
+	MSVCR100D!_malloc_dbg+00000021 (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 160)
+	mfc100ud!operator new+00000020 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\afxmem.cpp, 321)
+	mfc100ud!operator new[]+0000000E (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\afxmem.cpp, 355)
+	BatteryMeter!CPUInformation::CPUInformation+0000002D (d:\livemesh\sharingbin\cppdebug\exercises\batterymeter\batterymeter\cpuinformation.cpp, 12)
+	BatteryMeter!TemperatureAndBatteryUpdaterThread+0000007D (d:\livemesh\sharingbin\cppdebug\exercises\batterymeter\batterymeter\batterymeterdlg.cpp, 52)
+	kernel32!BaseThreadInitThunk+0000000E
+	ntdll!__RtlUserThreadStart+00000070
+	ntdll!_RtlUserThreadStart+0000001B
+
++  4b6798 ( 557568 - a0dd0)    70a allocs	BackTrace7E5C8C
++     636 (   70a -    d4)	BackTrace7E5C8C	allocations
+
+	ntdll!RtlAllocateHeap+00000274
+	MSVCR100D!_heap_alloc_base+00000053 (f:\dd\vctools\crt_bld\self_x86\crt\src\malloc.c, 55)
+	MSVCR100D!_heap_alloc_dbg_impl+000001FC (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 431)
+	MSVCR100D!_nh_malloc_dbg_impl+0000001F (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 239)
+	MSVCR100D!_nh_malloc_dbg+0000002C (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 302)
+	MSVCR100D!_malloc_dbg+00000021 (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 160)
+	mfc100ud!operator new+00000020 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\afxmem.cpp, 321)
+	BatteryMeter!BatteryInformation::BatteryInformation+0000002D (d:\livemesh\sharingbin\cppdebug\exercises\batterymeter\batterymeter\batteryinformation.cpp, 12)
+	BatteryMeter!TemperatureAndBatteryUpdaterThread+0000006E (d:\livemesh\sharingbin\cppdebug\exercises\batterymeter\batterymeter\batterymeterdlg.cpp, 51)
+	kernel32!BaseThreadInitThunk+0000000E
+	ntdll!__RtlUserThreadStart+00000070
+	ntdll!_RtlUserThreadStart+0000001B
+
++    1550 (  1a78 -   528)     4d allocs	BackTrace7E63FC
++      3e (    4d -     f)	BackTrace7E63FC	allocations
+
+	ntdll!RtlAllocateHeap+00000274
+	MSVCR100D!_heap_alloc_base+00000053 (f:\dd\vctools\crt_bld\self_x86\crt\src\malloc.c, 55)
+	MSVCR100D!_heap_alloc_dbg_impl+000001FC (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 431)
+	MSVCR100D!_nh_malloc_dbg_impl+0000001F (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 239)
+	MSVCR100D!_nh_malloc_dbg+0000002C (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 302)
+	MSVCR100D!_malloc_dbg+00000021 (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 160)
+	mfc100ud!operator new+00000026 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\afxmem.cpp, 379)
+	mfc100ud!operator new[]+0000001A (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\afxmem.cpp, 411)
+	mfc100ud!operator new[]+00000018 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\afxmem.cpp, 62)
+	mfc100ud!CPlex::Create+0000004D (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\plex.cpp, 29)
+	mfc100ud!CMapPtrToPtr::NewAssoc+00000029 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\map_pp.cpp, 107)
+	mfc100ud!CMapPtrToPtr::operator[]+0000005D (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\map_pp.cpp, 220)
+	mfc100ud!CMapPtrToPtr::SetAt+00000015 (f:\dd\vctools\vc7libs\ship\atlmfc\include\afxcoll.inl, 597)
+	mfc100ud!CHandleMap::FromHandle+000001E5 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\winhand.cpp, 172)
+	mfc100ud!CDC::FromHandle+00000035 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\wingdi.cpp, 88)
+	mfc100ud!CWnd::OnWndMsg+00000495 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\wincore.cpp, 2212)
+	mfc100ud!CWnd::WindowProc+00000032 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\wincore.cpp, 2067)
+	mfc100ud!AfxCallWndProc+000000F3 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\wincore.cpp, 248)
+	mfc100ud!AfxWndProc+000000A6 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\wincore.cpp, 411)
+	mfc100ud!AfxWndProcBase+0000005B (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\afxstate.cpp, 420)
+	USER32!InternalCallWinProc+00000023
+	USER32!UserCallWinProcCheckWow+000000D8
+	USER32!SendMessageWorker+00000581
+	USER32!SendMessageW+0000007F
+	UxTheme!DrawThemeParentBackgroundEx+00000151
+	COMCTL32!_DrawParentBackground+00000023
+	COMCTL32!CCDrawParentBackground+00000015
+	COMCTL32!Progress_PaintThemed+00000091
+	COMCTL32!Progress_Paint+00000096
+	COMCTL32!Progress_WndProc+0000018F
+	USER32!InternalCallWinProc+00000023
+	USER32!UserCallWinProcCheckWow+00000109
+
++    10a0 (  10a0 -     0)      4 allocs	BackTrace7EB63C
++       4 (     4 -     0)	BackTrace7EB63C	allocations
+
+	ntdll!RtlAllocateHeap+00000274
+	MSVCR100D!_heap_alloc_base+00000053 (f:\dd\vctools\crt_bld\self_x86\crt\src\malloc.c, 55)
+	MSVCR100D!_heap_alloc_dbg_impl+000001FC (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 431)
+	MSVCR100D!_nh_malloc_dbg_impl+0000001F (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 239)
+	MSVCR100D!_nh_malloc_dbg+0000002C (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 302)
+	MSVCR100D!_malloc_dbg+00000021 (f:\dd\vctools\crt_bld\self_x86\crt\src\dbgheap.c, 160)
+	mfc100ud!operator new+00000026 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\afxmem.cpp, 379)
+	mfc100ud!operator new[]+0000001A (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\afxmem.cpp, 411)
+	mfc100ud!operator new[]+00000018 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\afxmem.cpp, 62)
+	mfc100ud!CPlex::Create+0000004D (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\plex.cpp, 29)
+	mfc100ud!CFixedAllocNoSync::Alloc+0000002D (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\fixalloc.cpp, 60)
+	mfc100ud!CHandleMap::FromHandle+00000190 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\winhand.cpp, 163)
+	mfc100ud!CDC::FromHandle+00000035 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\wingdi.cpp, 88)
+	mfc100ud!CWnd::OnWndMsg+00000495 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\wincore.cpp, 2212)
+	mfc100ud!CWnd::WindowProc+00000032 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\wincore.cpp, 2067)
+	mfc100ud!AfxCallWndProc+000000F3 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\wincore.cpp, 248)
+	mfc100ud!AfxWndProc+000000A6 (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\wincore.cpp, 411)
+	mfc100ud!AfxWndProcBase+0000005B (f:\dd\vctools\vc7libs\ship\atlmfc\src\mfc\afxstate.cpp, 420)
+	USER32!InternalCallWinProc+00000023
+	USER32!UserCallWinProcCheckWow+000000D8
+	USER32!SendMessageWorker+00000581
+	USER32!SendMessageW+0000007F
+	UxTheme!DrawThemeParentBackgroundEx+00000151
+	COMCTL32!_DrawParentBackground+00000023
+	COMCTL32!CCDrawParentBackground+00000015
+	COMCTL32!Progress_PaintThemed+00000091
+	COMCTL32!Progress_Paint+00000096
+	COMCTL32!Progress_WndProc+0000018F
+	USER32!InternalCallWinProc+00000023
+	USER32!UserCallWinProcCheckWow+00000109
+	USER32!CallWindowProcAorW+000000AB
+	USER32!CallWindowProcW+0000001B
+
+
+Total increase == bb0f00 requested +  92580 overhead = c43480
