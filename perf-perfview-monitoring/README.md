@@ -39,7 +39,7 @@ After a minute or so, the log file will stabilize and end with a line similar to
 
 Go back to the command prompt and run `PerfView C:\Temp\PerfView.etl.zip`. The PerfView UI will open and the status bar will provide the progress of the open operation. After a few dozen seconds you should be able to see the various reports aggregated under the PerfView.etl file.
 
-![Screenshot of PerfView window with open report list](figure1.png)
+![Screenshot of PerfView window with open report list](figure.png)
 
 Double-click the **Asp.Net Stats** report to review some general information on web request performance in the application. On the bottom of the screen you can see statistics for the request URLs that were present in the trace. You can immediately see that the root URL (`/`) has a maximum response time of over 5,000ms.
 
