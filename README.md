@@ -20,7 +20,7 @@ git clone https://github.com/selagroup/diagnostics-courses.git
 1. [Analyzing Unmanaged Heap Allocations with XPerf and WPA](perf-xperf-heapalloc/) [C++]
 1. [Diagnosing High CPU Utilization with PerfView](perf-perfview-cpu/)
 1. [Profiling CPU Work by Sampling with XPerf](perf-xperf-cpu/)
-1. [Reducing .NET Allocations with PerfView](perf-perfview/netallocs/) [C#]
+1. [Reducing .NET Allocations with PerfView](perf-perfview-netallocs/) [C#]
 1. [Setting Up Continuous ETW Monitoring with PerfView](perf-perfview-monitoring/)
 1. [Diagnosing a .NET Memory Leak with PerfView](perf-perfview-netleak/) [C#]
 1. [Collecting IntelliTrace Logs with the Stand-Alone Collector](dbg-intellitrace-sc/) [C#]
