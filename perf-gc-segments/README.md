@@ -6,7 +6,7 @@ In this lab you will experiment with Sysinternals VMMap to inspect GC segments a
 
 Run the OOM2.exe application from the [bin](bin/) folder. After a few seconds, it crashes with an `OutOfMemoryException` error. Do not close the Windows Error Reporting window -- move it aside, but leave the process in a running state.
 
-Run Sysinternals VMMap (VMMap.exe) from the [tools](tools/) folder. When prompted to select a process, select the OOM2.exe process. In the resulting window, review the summary table and determine how much virtual memory is still available for allocations (under the **Free** category). Surprisingly, even though there seems to be a lot of available memory, the application still fails to allocate more memory.
+Run Sysinternals VMMap (VMMap.exe) from the [tools](../tools/) folder. When prompted to select a process, select the OOM2.exe process. In the resulting window, review the summary table and determine how much virtual memory is still available for allocations (under the **Free** category). Surprisingly, even though there seems to be a lot of available memory, the application still fails to allocate more memory.
 
 ![VMMap main window](figure.png)
 
