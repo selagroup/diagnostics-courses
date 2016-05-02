@@ -196,3 +196,6 @@ FakesAssemblies/
 
 # Mac OS X Thumbs.db
 Thumbs.db
+
+# Vim swap buffer
+*.swp
