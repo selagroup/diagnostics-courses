@@ -22,6 +22,12 @@ Open a command prompt window and navigate to the directory that contains the Vis
 VSPerf /attach:StupidNotepad.exe /file:C:\Temp\StupidNotepadCPU.vspx
 ```
 
+Type some text into the edit box again, and make sure the UI hiccup occurs multiple times. When you think you have enough information to start analyzing the problem, run the following commands to detach from the target application and shut down the profiler:
+
+```
+VSPerf /detach
+```
+
 ##### On Windows 7 or Windows Server 2008 and Earlier
 
 Open a command prompt window and navigate to the directory that contains the Visual Studio command-line profiling tools. Then, run the following command to set environment variables necessary for CPU profiling of .NET applications:
