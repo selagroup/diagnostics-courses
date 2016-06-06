@@ -4,11 +4,11 @@ In this lab, you will use the Visual Studio Concurrency Visualizer to analyze an
 
 #### Task 1
 
-Run the StupidNotepad.exe application from the [bin](perf-perfview-cpu/bin/) folder and start typing some text into the edit box. You'll notice that the UI occasionally stutters and stops responding for short periods of time. If you open a Task Manager window and inspect the CPU utilization at the same time, you will also notice CPU usage spikes when typing into the application.
+Run the StupidNotepad.exe application from the [bin](../perf-perfview-cpu/bin/) folder and start typing some text into the edit box. You'll notice that the UI occasionally stutters and stops responding for short periods of time. If you open a Task Manager window and inspect the CPU utilization at the same time, you will also notice CPU usage spikes when typing into the application.
 
 #### Task 2
 
-Run Visual Studio and open the [StupidNotepad.sln](perf-perfview-cpu/src/StupidNotepad.sln) solution. Compile and run the project to make sure you can reproduce the same issue.
+Run Visual Studio and open the [StupidNotepad.sln](../perf-perfview-cpu/src/StupidNotepad.sln) solution. Compile and run the project to make sure you can reproduce the same issue.
 
 In Visual Studio, click **Analyze** > **Concurrency Visualizer** > **Start with Current Project**.
 
