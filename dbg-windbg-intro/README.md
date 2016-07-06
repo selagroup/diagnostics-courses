@@ -46,7 +46,7 @@ Run the following loop command in WinDbg to display the vector's contents. This 
 .for (r $t0=0; @$t0 < @@c++(v._Mylast - v._Myfirst); r $t0=@$t0+1) { ?? v._Myfirst[@$t0] }
 ```
 
-> TODO EXPLANATION
+> A brief explanation of the above command: the `.for` statement runs a loop. The `r $t0 = 0` command initializes a temporary variable called `$t0` to the value 0. The `r $t0 = @$t0 + 1` command increments `$t0` by 1 with every loop iteration. The loop body displays the `$t0`'s element in the array pointed to by `v._Myfirst`. Finally, the loop's stop condition `$t0 < @@c++(v._Mylast - v._Myfirst)` means that we should keep looping as long as `$t0` is smaller than the number of elements in the vector, calculated as the difference between `v._Mylast` and `v._Myfirst`.
 
 Run the traverse_vector.script file from the [tools](tools/) folder to display the vector's contents, passing to it the name of the vector variable. For example:
 
@@ -54,7 +54,7 @@ Run the traverse_vector.script file from the [tools](tools/) folder to display t
 $$>a< %COURSEDIR\tools\traverse_vector.script v
 ```
 
-> WINDBG DOESN'T EXPAND ENVIRONMENT VARIABLES
+> Note that WinDbg doesn't expand environment variables, so you will have to replace %COURSEDIR% with the actual directory where you extracted the course materials.
 
 #### Task 3
 
