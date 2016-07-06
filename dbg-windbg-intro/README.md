@@ -30,7 +30,7 @@ Automatically display the local variables for each of the frames in each of the 
 
 #### Task 2
 
-The `PrintArrayRepeatedly` method that is executed by one of the application's threads has a local variable of type `int*`. Locate that method and switch to its frame. You can do this manually by checking all the thread stacks for the presence of this method, or by using the `!findstack PrintArrayRepeatedly` command.
+The `PrintArrayRepeatedly` method that is executed by one of the application's threads has a local variable of type `int*`. Locate that method and switch to its frame. You can do this manually by checking all the thread stacks for the presence of this method, or by using the `!findstack DebuggingDemo!PrintArrayRepeatedly` command.
 
 Display that local variable using the `dv arr` command, and then display all the array elements using the `dd address Llength` command. For example, if the array is of length 10 and is located at address 0x10203040, use the `dd 0x10203040 L0n10` command.
 
