@@ -74,7 +74,7 @@ Open the HeuristicsWhenOptimized.dmp file from the [bin](bin/) folder. This is a
 
 Switch to thread 1 using the `~1s` command and inspect the stack (`kb`). The thread is stuck in `WaitForSingleObjectEx`, but the `kb` command is not able to display the function’s parameters because the code is optimized and because in the x64 calling convention, parameters are (usually) not passed on the stack.
 
-Load the CMKD extension from the [tools](tools/) folder using the `.load %COURSEDIR%\tools\cmkd_x64.dll` command. As always, replace %COURSEDIR% with the actual value on your system.
+Load the CMKD extension from the [tools](../tools/) folder using the `.load %COURSEDIR%\tools\cmkd_x64.dll` command. As always, replace %COURSEDIR% with the actual value on your system.
 
 Issue the `!stack -p -t` command to inspect the parameter values. Try to understand the tracking information which explains how CMKD was able to deduce the parameter values. For example:
 
