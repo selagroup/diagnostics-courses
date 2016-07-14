@@ -104,7 +104,7 @@ mov  qword ptr [rsp+38h],rax
 call qword ptr [...!_imp_WaitForMultipleObjects (...)]
 ```
 
-The R8, R9, and RCX values are readily available. Namely, R8 is initialized to 1 using the `mov r8d, 1` instruction; R9 is initialized to 2 using the `lea ecx, [r8+1]` instruction; and R9 is initialized to 0xEA60 using the `mov r9, 0xea60` instruction.
+The R8, R9, and RCX values are readily available. Namely, R8 is initialized to 1 using the `mov r8d, 1` instruction; RCX is initialized to 2 using the `lea ecx, [r8+1]` instruction; and R9 is initialized to 0xEA60 using the `mov r9, 0xea60` instruction.
 
 The RDX register is initialized with the stack address RSP+30. Issue the `k` command again and note the **Child-SP** column value for the `wmain` frame. Issue the command `dq <child-SP-from-previous-step>+30 L2` command to identify the two handles passed to the `WaitForMultipleObjects` function.
 
