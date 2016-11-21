@@ -49,5 +49,6 @@ git clone https://github.com/selagroup/diagnostics-courses.git
 1. [Implementing a Stack Dumper Utility with CLRMD](dbg-clrmd-stackdumper/) [C#]
 1. [Running Heap Queries on Live Processes with CLRMD](dbg-clrmd-heapqueries/) [C#]
 1. [Analyzing UI Delays with the Visual Studio Concurrency Visualizer](perf-concvis-ui/)
+1. [Command-Line Performance Analysis with `etrace`](perf-etrace-intro/)
 
 Copyright (C) Sela Group, 2007-2016. All rights reserved.
