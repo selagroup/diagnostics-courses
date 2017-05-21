@@ -12,7 +12,7 @@ namespace SDPApp.Shared
     {
         const string SPEAKERS_URL = "http://www.seladeveloperpractice.com/api/speakers";
         const string SESSIONS_URL = "http://www.seladeveloperpractice.com/api/sessions";
-        const string CDN_BASE_URL = "http://sdp2.blob.core.windows.net";
+        const string CDN_BASE_URL = "http://sdp3.blob.core.windows.net";
 
         private static Dictionary<string, Speaker> _speakers;
         private static Dictionary<string, Session> _sessions;
