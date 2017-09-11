@@ -52,5 +52,6 @@ git clone https://github.com/selagroup/diagnostics-courses.git
 1. [Command-Line Performance Analysis with `etrace`](perf-etrace-intro/)
 1. [Programmatic ETW Recording with TraceEvent](perf-traceevent/) [C#]
 1. [Micro-Benchmarking with BenchmarkDotNet](perf-benchmarkdotnet/) [C#]
+1. [Viewing Top-Level GC Behavior with Performance Counters](perf-perfcounters-gc/) [C#]
 
 Copyright (C) Sela Group, 2007-2016. All rights reserved.
