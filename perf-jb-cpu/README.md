@@ -21,3 +21,7 @@ Answer the following questions:
 * What are the background threads doing in this application?
 * Which proportion of time is actually on-CPU as opposed to various kinds of blocking?
 * How does dotTrace's sampling method work? (You might find [the documentation on profiling types](https://www.jetbrains.com/help/profiler/Profiling_Guidelines__Choosing_the_Right_Profiling_Mode.html) useful.)
+
+#### Bonus
+
+Experiment with dotTrace's *timeline* profiling method. In this mode, dotTrace collects information that can visualize your threads' activity on a timeline, similarly to the [Visual Studio Concurrency Visualizer](../perf-concvis-ui). You can run the same StupidNotepad.exe application in timeline mode and explore the resulting report. This is an even better way of understanding what blocked the UI thread from responding to user input quickly enough.
