@@ -56,5 +56,6 @@ git clone https://github.com/selagroup/diagnostics-courses.git
 1. [Profiling CPU Work by Sampling with dotTrace](perf-jb-cpu/) [C#]
 1. [Analyzing Memory Traffic with dotMemory](perf-jb-allocs/) [C#]
 1. [Analyzing a .NET Memory Leak with dotMemory](perf-jb-leak/) [C#]
+1. [Analyzing a .NET Memory Leak with SciTech Memory Profiler](perf-scitech/) [C#]
 
-Copyright (C) Sela Group, 2007-2016. All rights reserved.
+Copyright (C) Sela Group, 2007-2017. All rights reserved.
