@@ -10,6 +10,32 @@ Create a new console application in Visual Studio, and install the BenchmarkDotN
 
 #### Task 2
 
+In this benchmark, you will try to reproduce a somewhat surprising result from a [StackOverflow question](https://stackoverflow.com/questions/11227809/why-is-it-faster-to-process-a-sorted-array-than-an-unsorted-array), which shows that a certain operation that touches all the elements in a sorted array is much faster than the same operation on an unsorted array. Read the original question, and, if you'd like, read the discussion that explains the root cause -- but don't forget to save some time for writing the micro-benchmark!
+
+Begin by writing a public class that will contain your benchmark methods. Add a method decorated with `[GlobalSetup]` that will perform the array initialization: put the same elements in both arrays (integers from 0 to 255, randomly generated), but then sort one of the arrays and not the other.
+
+Next, implement two benchmark methods. They should look like the following:
+
+```C#
+[Benchmark]
+public int Sorted()
+{
+  int sum = 0;
+  for (int i = 0; i < _sorted.Length; ++i)
+    if (_sorted[i] >= 128)
+      sum += _sorted[i];
+  return sum;
+}
+```
+
+Finally, in your `Main` method, add code to run the benchmarks and report the results. As a follow-up:
+
+* Read the rest of the discussion on StackOverflow to learn about how branch prediction failures affect the loop performance in this case.
+* Inspect the generated machine code (assembly instructions) and try to identify the instruction that causes the failed branch predictions. You can use BenchmarkDotNet's [Disassembly Diagnoser](http://adamsitnik.com/Disassembly-Diagnoser/) to save you the trouble of attaching a debugger and disassembling the code yourself.
+* Try to make small changes to the code and see how it behaves, e.g. if you change `sum += _sorted[i]` to `++sum` (just counting instead of summing).
+
+#### Task 3
+
 In this benchmark, you will compare three .NET collections in terms of iterating through a large number of elements (which are already in the collection). Specifically, you will compare `List<int>`, `LinkedList<int>`, and `int[]` when it comes to traversing and adding all the collection's elements together.
 
 Begin by writing a public class that will contain your benchmark methods. Add a method decorated with `[GlobalSetup]` that will perform the collection initialization: insert 1,000,000 integers into a `List<int>`, `LinkedList<int>`, and `int[]`, which should be stored as members on your benchmark class.
