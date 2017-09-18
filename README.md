@@ -58,5 +58,6 @@ git clone https://github.com/selagroup/diagnostics-courses.git
 1. [Analyzing a .NET Memory Leak with dotMemory](perf-jb-leak/) [C#]
 1. [Analyzing a .NET Memory Leak with SciTech Memory Profiler](perf-scitech/) [C#]
 1. [Structure Deserialization with Unsafe Code](perf-unsafe/) [C#]
+1. [Measuring Cache Misses with PerfView](perf-perfview-cache/)
 
 Copyright (C) Sela Group, 2007-2017. All rights reserved.
