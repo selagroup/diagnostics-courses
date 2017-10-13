@@ -14,8 +14,7 @@ Accept a directory name as a command-line argument and traverse all the .dmp fil
 
 ```C#
 DataTarget target = DataTarget.LoadCrashDump(filename, CrashDumpReader.ClrMD);
-string dacLocation = target.ClrVersions[0].TryDownloadDac();
-ClrRuntime runtime = target.CreateRuntime(dacLocation);
+ClrRuntime runtime = target.ClrVersions[0].CreateRuntime();
 ```
 
 #### Task 3
