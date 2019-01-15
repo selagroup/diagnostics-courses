@@ -36,8 +36,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.ConcurrencyVisualizer.Markers">
-      <HintPath>..\..\..\..\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\ConcurrencyVisualizer\SDK\Managed\3.5\Microsoft.ConcurrencyVisualizer.Markers.dll</HintPath>
+    <Reference Include="Microsoft.ConcurrencyVisualizer.Markers, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\ConcurrencyVisualizer.2.1.0\lib\net45\Microsoft.ConcurrencyVisualizer.Markers.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -73,6 +73,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
